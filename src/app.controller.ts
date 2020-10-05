@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/slackTest')
+  sendSlackTest(): string {
+    return this.appService.sendSlackTest();
+  }
 }
